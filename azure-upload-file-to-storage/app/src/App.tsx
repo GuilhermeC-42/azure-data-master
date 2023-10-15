@@ -124,10 +124,10 @@ function App() {
         <Box m={4}>
           {/* App Title */}
           <Typography variant="h4" gutterBottom>
-            Upload file to Azure Storage
+            Adicione seu arquivo com a reclamação desejada
           </Typography>
           <Typography variant="h5" gutterBottom>
-            with SAS token
+            Ambiente de desenvolvimento
           </Typography>
           <Typography variant="body1" gutterBottom>
             <b>Container: {containerName}</b>
@@ -142,7 +142,7 @@ function App() {
             my={4}
           >
             <Button variant="contained" component="label">
-              Select File
+              Selecionar arquivo
               <input type="file" hidden onChange={handleFileSelection} />
             </Button>
             {selectedFile && selectedFile.name && (
@@ -162,7 +162,7 @@ function App() {
               my={4}
             >
               <Button variant="contained" onClick={handleFileSasToken}>
-                Get SAS Token
+                Capturar SAS Token
               </Button>
               {sasTokenUrl && (
                 <Box my={2}>
