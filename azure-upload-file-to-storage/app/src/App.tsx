@@ -86,10 +86,11 @@ function App() {
 
     convertFileToArrayBuffer(selectedFile as File)
       .then((fileArrayBuffer) => {
+        console.log(sasTokenUrl);
         if (
           fileArrayBuffer === null ||
           fileArrayBuffer.byteLength < 1 ||
-          fileArrayBuffer.byteLength > 256000
+          fileArrayBuffer.byteLength > 1000000
         )
           return;
 
